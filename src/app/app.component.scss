@@ -1,0 +1,97 @@
+.mat-toolbar {
+  background: #fafafa !important;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-form-field {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  color: #0188eb;
+  width: 100%;
+  font-size: 14px;
+}
+
+.fileUpload {
+  width: 100%;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  height: 50px;
+  place-items: center;
+  display: grid;
+
+  &.hovering {
+    border: 2px solid #f16624;
+    color: #dadada !important;
+  }
+
+  .file-label {
+    font-size: 1.2em;
+  }
+}
+
+thead {
+  tr {
+    th {
+      // color: #b0b3bb;
+      font-weight: 500;
+      font-size: 14px;
+      border-top: 1px solid #f1d9d9;
+      border-bottom: 1px solid #f1d9d9;
+      text-align: left;
+      white-space: pre;
+    }
+
+    border-top: hidden;
+    cursor: pointer;
+  }
+}
+
+tbody {
+  tr {
+    td {
+      // color: #fff;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 200;
+      border-top: 1px solid #f1d9d9;
+      border-bottom: 1px solid #f1d9d9;
+      cursor: pointer;
+      white-space: pre;
+    }
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px !important;
+  height: 15px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0188eb80;
+  border-radius: 10px;
+  cursor: pointer !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0188eb;
+  cursor: pointer !important;
+}
+
+.error-msg {
+  color: red;
+  margin-top: -10%;
+  font-size: 14px;
+}

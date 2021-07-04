@@ -1,1 +1,100 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  // background: #5f6368;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  // background: #888;
+  background-color: #5f6368;
+  border-radius: 10px !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5f6368;
+  cursor: pointer;
+  // width: 20px !important;
+
+  width: 10px;
+  height: 10px;
+}
+
+.loader {
+  align-items: center;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 6;
+  height: 50vh;
+
+  mat-spinner {
+    zoom: 0.6;
+  }
+}
+
+.red-snackbar {
+  background: #f44336;
+  color: #fff;
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: #0188eb !important;
+}
+
+mat-icon {
+  color: #909090 !important;
+}
+
+.slot-end {
+  float: right;
+}
+
+.buyer-detail-tab-header .mat-tab-header {
+  background: #f4f5f8 !important;
+  border: 4px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.error-msg {
+  color: red;
+  font-size: 10px;
+  margin-top: -5%;
+}
+
+.custom-dialog-container .mat-dialog-container {
+  background: #ffffff !important;
+  padding: 0px;
+  // border-radius: 10px;
+  overflow: hidden;
+}
